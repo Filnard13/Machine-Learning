@@ -1,0 +1,93 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 .SFNS-BoldItalic;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 .SFNS-Regular;
+\f3\fnil\fcharset0 .SFNS-RegularItalic;\f4\fnil\fcharset0 HelveticaNeue-Bold;\f5\fnil\fcharset0 .SFNS-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red14\green14\blue14;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c6700\c6700\c6700;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\i\b\fs36 \cf2 \ul \ulc2 READ_ME\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\i0\b0\fs20 \cf3 \ulnone %% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ %%\
+%                 Project Work: Machine Learning for Economists           %\
+%\
+%  University of Bologna \'97 LM(EC)\'b2 Programme\
+%  Last Updated: 13/11/2025\
+%\
+%  Group Members:\
+%    \'95 Filippo Nardoni\
+%    \'95 Federica Carrieri\
+%    \'95 Luca Danelli\
+%    \'95 Anita Scambia\
+%\
+%  Description:\
+%    Empirical analysis of European stock market predictability using\
+%    factor-augmented regression models (FARM Predict) and related\
+%    benchmark approaches (AR, VAR, PCR, AR\'96PCR, VAR\'96LASSO).\
+%\
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ %%\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f0\i\b\fs36 \cf2 \ul \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\i0\b0\fs24 \cf2 \ulnone \
+This folder contains all the data files used in the project 
+\f3\i \'93Forecasting Dynamics and Comovements in European Financial Markets through FARM.\'94
+\f2\i0 \
+Each file plays a specific role in the preprocessing, cleaning, and main forecasting pipeline.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4\b \cf2 FOLDER -> DATA
+\f2\b0 \
+\pard\tqr\tx340\tx500\li500\fi-500\sl324\slmult1\sb240\partightenfactor0
+
+\fs22 \cf2 	1.	
+\f4\b EU_stocks_data_daily_2_new.csv
+\f2\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li500\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 Main dataset of daily returns for all European stocks used in the analysis.\
+This file is read inside the main script 
+\f3\i code_project_final.m
+\f2\i0  as the primary input for the forecasting models.\
+\pard\tqr\tx340\tx500\li500\fi-500\sl324\slmult1\sb240\partightenfactor0
+\cf2 	2.	
+\f4\b dates_daily_new.csv
+\f2\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li500\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 Vector of trading dates corresponding to the observations in the main dataset.\
+Used for indexing, plotting with financial crises shading, and aligning rolling windows.\
+\pard\tqr\tx340\tx500\li500\fi-500\sl324\slmult1\sb240\partightenfactor0
+\cf2 	3.	
+\f4\b Download_and_Data_Cleaning.R
+\f2\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li500\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 R script used to download original raw data and convert it into the cleaned format used in MATLAB.\
+Includes filtering, missing-value handling, and reformatting.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f4\b\fs24 \cf2 FOLDER -> TABLES
+\f5 \
+\pard\tqr\tx340\tx500\li500\fi-500\sl324\slmult1\sb240\partightenfactor0
+\cf2          
+\f2\b0 Folder for final savings of all tables.
+\f4\b \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+\cf2 \
+FOLDER -> CODE\
+\pard\tqr\tx340\tx500\li500\fi-500\sl324\slmult1\sb240\partightenfactor0
+
+\f2\b0\fs22 \cf2 	1.	
+\f5\b\fs24 "code_project_final.m"\
+         
+\f2\b0 Main Code with the empirical Analysis. 
+\f3\i \ul \ulc2 Remember to change the initial file path [\'93insert/Your/Path\'94]
+\f4\i0\b \ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\sl324\slmult1\pardirnatural\partightenfactor0
+
+\f2\b0\fs22 \cf2 \
+}
